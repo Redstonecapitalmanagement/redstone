@@ -1,0 +1,43 @@
+.panel {
+  > div {
+    @media (min-width: 1000px) {
+      width: 1000px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.primary-header {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  padding: $gutter-small;
+
+  > div {
+    position: relative;
+  }
+
+  color: #fff;
+  background-color: rgba(0,0,0, 0.2);
+
+  .logo {
+    height: 60px;
+  }
+
+  .primary-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    a {
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0.2em 1em;
+      color: #fff;
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+}

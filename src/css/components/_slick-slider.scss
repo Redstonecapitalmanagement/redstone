@@ -1,0 +1,81 @@
+.slick-slider {
+
+  .slick-slide {
+    height: 500px;
+    background-size: cover;
+  }
+
+  .slide-content {
+    max-width: 40em;
+    
+    q {
+      font: 2.5em $fancy-font-family;
+      color: $red;
+      text-shadow: 1px 1px #ffc2c0;
+    }
+
+    .by {
+      color: #222;
+      font-weight: bold;
+      font-size: 0.6em;
+    }
+
+    p {
+      font-size: 1.4em;
+      color: #eee;
+      text-shadow: 1px 1px #000;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .slick-slide.slide-1 {
+    background-image: url('/images/carousel/1.jpg');
+    background-position: 100% 10%;
+  }
+
+  .slick-slide.slide-2 {
+    background-image: url('/images/carousel/2.jpg');
+  }
+
+  .slick-slide.slide-3 {
+    background-image: url('/images/carousel/3.jpg');
+    background-position: 100% 10%;
+  }
+
+
+  /** Overrides of Slick Slider Theme **/
+  
+  &.slick-dotted {
+    margin-bottom: 0;
+  }
+
+  .slick-dots {
+    bottom: 80px;
+
+    li {
+      margin: 0 10px;
+
+      button:before {
+        font-size: 15pt;
+        color: #fff;
+        opacity: 0.5;
+      }
+
+      &.slick-active button:before {
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .panel > div {
+    margin-top: 5em;
+    height: 100%;
+    padding: 2em 0;
+    position: relative;
+  } 
+
+
+
+}

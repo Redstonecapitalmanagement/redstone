@@ -1,0 +1,11 @@
+.panel.primary-content {
+  border-top: 1.5em solid #f5f5f5;
+  background-color: #fafafa;
+
+  > div { padding: 1em 0; }
+
+  .columns > div:first-child {
+    border-right: 1px solid #aaa;
+  }
+
+}

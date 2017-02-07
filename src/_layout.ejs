@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- partial('./_partials/_head'); %>
+
+<body>
+
+<div class="page">
+
+  <header class="panel primary-header">
+    <div>
+      <div class="columns split">
+        <div>
+          <img src="/images/logo-white.svg" alt="RedStone Logo" class="logo">
+        </div>
+        <div>
+          <div class="phone">1-800-555-5555</div>
+          <nav class="primary-nav">
+            <a href="/">Home</a>
+            <a href="/">Services</a>
+            <a href="/">Philosophy</a>
+            <a href="/">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="slide-1 panel">
+      <div>
+        
+        <div class="slide-content">
+          <q>Quality means doing it right when no one is looking.</q>
+          <div class="by">Henry Ford</div>
+          <p>At Redstone Capital, we realize your trust is in us to perform day-in and day-out. Managing wealth is a priviledge. Quality is our duty.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="slide-2 panel">
+      <div>
+
+      </div>
+    </div>
+    <div class="slide-3 panel">
+      <div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="panel services">
+    <div>
+      
+      <section class="service">
+        <h1 class="title">Quality</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusantium saepe laborum animi error iure labore molestiae aperiam hic a asperiores.</p>
+      </section>
+      <section class="service">
+        <h1 class="title">Wealth</h1>
+        <p>Laborum animi error iure labore molestiae aperiam hic a asperiores.</p>
+      </section>
+      <section class="service">
+        <h1 class="title">Management</h1>
+        <p>Et accusantium saepe laborum animi error iure labore molestiae aperiam hic a asperiores.</p>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="panel primary-content">
+    <div>
+      
+      <div class="columns with-gutters">
+        <div class="span-4">[live stock indecies]</div>
+        <div class="flex">
+          
+          <%- yield %>
+
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="panel footer">
+    <div></div>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="/javascript/main.js"></script>
+
+</body>
+</html>

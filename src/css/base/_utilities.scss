@@ -1,0 +1,5 @@
+.clearfix { @include clearfix; }
+
+.owl-small { @include owl(0.2em); }
+.owl-medium { @include owl($gutter-small); }
+.owl { @include owl($gutter); }
