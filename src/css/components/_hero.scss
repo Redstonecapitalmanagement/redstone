@@ -1,37 +1,29 @@
-.slick-slider {
+.hero.slick-slider {
 
   .slick-slide {
     height: 500px;
     background-size: cover;
+
+    > div {
+      position: relative; // For the .slide-content
+      height: 100%;
+    }
   }
 
   .slide-content {
-    max-width: 40em;
-    
-    q {
-      font: 2.5em $fancy-font-family;
-      color: $red;
-      text-shadow: 1px 1px #ffc2c0;
-    }
-
-    .by {
-      color: #222;
-      font-weight: bold;
-      font-size: 0.6em;
-    }
-
-    p {
-      font-size: 1.4em;
-      color: #eee;
-      text-shadow: 1px 1px #000;
-      text-transform: uppercase;
-    }
-
+    position: absolute;
+    max-width: 20em;
+    font-size: 2em;
+    color: #eee;
+    text-shadow: 1px 1px #000;
+    text-transform: uppercase;
   }
 
   .slick-slide.slide-1 {
     background-image: url('/images/carousel/1.jpg');
     background-position: 100% 10%;
+
+    .slide-content { bottom: 4em; }
   }
 
   .slick-slide.slide-2 {
@@ -68,14 +60,5 @@
 
     }
   }
-
-  .panel > div {
-    margin-top: 5em;
-    height: 100%;
-    padding: 2em 0;
-    position: relative;
-  } 
-
-
 
 }

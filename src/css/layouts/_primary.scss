@@ -1,7 +1,9 @@
 .panel {
   > div {
-    @media (min-width: 1000px) {
-      width: 1000px;
+    padding: 0 2em;
+    @media (min-width: $desktop-breakpoint) {
+      padding: 0;
+      width: $desktop-breakpoint;
       margin: 0 auto;
     }
   }

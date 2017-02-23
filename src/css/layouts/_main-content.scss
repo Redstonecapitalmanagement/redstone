@@ -1,0 +1,20 @@
+main {
+  display: flex;
+  margin: $gutter 0;
+}
+
+.primary-content {
+  flex: 1
+}
+
+.primary-aside {
+  display: none;
+  width: 300px;
+  border-right: 1px solid #aaa;
+  margin-right: $gutter;
+  padding-right: 1em;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+  }
+}

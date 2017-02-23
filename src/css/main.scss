@@ -23,7 +23,8 @@
  */
 
 @import "components/columns";
-@import "components/slick-slider";
+@import "components/hero";
+@import "components/quotes";
 
 
 /**
@@ -32,6 +33,6 @@
 
 @import "layouts/primary";
 @import "layouts/panel-services";
-@import "layouts/panel-primary-content";
 @import "layouts/panel-footer";
+@import "layouts/main-content";
 
