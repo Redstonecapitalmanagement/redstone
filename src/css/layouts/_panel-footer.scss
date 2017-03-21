@@ -1,9 +1,29 @@
 .panel.footer {
-
   background-color: #333;
-  color: #fff;
+  color: #aaa;
 
   > div {
     min-height: 20em;
   }
+}
+
+.footer-container {
+  display: flex;
+  margin: $gutter 0;
+}
+
+.footer-contact {
+  display: none;
+  width: 300px;
+  border-right: 1px solid #444;
+  margin-right: $gutter;
+  padding-right: 1em;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+  }
+}
+
+.footer-content {
+  flex: 1;
 }

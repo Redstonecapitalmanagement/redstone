@@ -1,4 +1,10 @@
+.page {
+  background-color: #fff;
+}
+
 .panel {
+  padding: 1px; // protect against collapsing margins
+  
   > div {
     padding: 0 2em;
     @media (min-width: $desktop-breakpoint) {
@@ -9,37 +15,118 @@
   }
 }
 
+$primary-nav-breakpoint: 800px;
+
 .primary-header {
   position: absolute;
   z-index: 100;
   left: 0;
   right: 0;
   padding: $gutter-small;
-
-  > div {
-    position: relative;
-  }
-
   color: #fff;
   background-color: rgba(0,0,0, 0.2);
 
   .logo {
-    height: 60px;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .primary-nav {
+    overflow: hidden;
+    .phone { float: left; }
+    .toggle-primary-nav { float: right; }
   }
 
-  .primary-nav {
-    position: absolute;
+  @media (min-width: $primary-nav-breakpoint) {
+    .primary-header-container {
+      position: relative;
+      display: flex;
+    }
+    .logo {
+      width: 300px;
+    }
+    .primary-nav {
+      flex: 1;
+      text-align: right;
+
+      // Cancel floats
+      overflow: visible;
+      .phone { float: none; }
+      .toggle-primary-nav { float: none; }
+    }
+  }
+
+  .toggle-primary-nav {
+    background-color: $red;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    padding: 0.2em 1em;
+
+    @media (min-width: $primary-nav-breakpoint) {
+      display: none;
+    }
+  }
+
+  .primary-nav nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     right: 0;
-    bottom: 0;
+    background-color: $red;
+    text-align: center;
 
     a {
       text-transform: uppercase;
-      display: inline-block;
-      padding: 0.2em 1em;
+      display: block;
       color: #fff;
-      &:hover {
-        background-color: $red;
+      padding: 2em;
+      &:active { background-color: darken($red, 10%); }
+    }
+
+    @media (min-width: $primary-nav-breakpoint) {
+      display: block !important;
+      background-color: transparent;
+      position: absolute;
+      top: auto;
+      left: auto;
+      right: 0;
+      bottom: 0;
+
+      a {
+        display: inline-block;
+        padding: 0.2em 1em;
+        &:hover { background-color: $red; }
       }
     }
   }
+
+  .toggle-primary-nav.active ~ nav {
+    display: block;
+  }
+
+}
+
+
+.subpage {
+
+  .primary-header {
+    background-color: #eee;
+    position: static;
+    border-bottom: 4px solid $red;
+    color: #555;
+  }
+
+  .primary-nav nav {
+    @media (min-width: $primary-nav-breakpoint) {
+      background-color: $red;
+      bottom: 0;
+      transform: translateY($gutter-small);
+      a:hover { background-color: darken($red, 10%); }
+    }
+  }
+
 }

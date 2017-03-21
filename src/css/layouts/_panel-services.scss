@@ -5,6 +5,11 @@ $services-breakpoint: 800px;
   color: #fff;
   background-image: url('/images/background.png');
 
+  > div {
+    padding: 0;
+    display: flex;
+  }
+
   @media (min-width: $services-breakpoint) {
     z-index: 500;
     transform: translateY(-1px);
@@ -12,15 +17,17 @@ $services-breakpoint: 800px;
   }
 
   .service {
-    overflow: hidden;
     position: relative;
     background-color: #eee;
     background-size: cover;
     cursor: pointer;
     width: 100%;
     height: 5em;
+    background-position: center center;
+    margin-top: 1em; // Offset title transition upward
 
     @media (min-width: $services-breakpoint) {
+      overflow: hidden;
       display: inline-block;
       vertical-align: top;
       width: 30%;
@@ -36,12 +43,22 @@ $services-breakpoint: 800px;
 
   .title {
     position: absolute;
+    top: 0;
+    right: 0;
     left: 0;
-    top: 0.5em;
-    font-size: 1em;
-    padding: 0.1em 2.5em;
-    background-color: $red;
-    transition: all 0.3s;
+    font-size: 0.8em;
+    transform: translateY(-100%);
+    background: linear-gradient(40deg, $red, #771c19);
+
+    @media (min-width: $services-breakpoint) {
+      font-size: 1em;
+      transform: translateY(0); // reset
+      left: 0;
+      top: 0.5em;
+      right: auto;
+      padding: 0.1em 2.5em;
+      transition: all 0.3s;
+    }
   }
 
   p {
@@ -59,11 +76,13 @@ $services-breakpoint: 800px;
     transition: all 0.7s;
   }
 
-  .service:hover {
-    .title { padding: 0.1em 3.2em; }
-    p {
-      opacity: 1;
-      transform: translateY(0);
+  @media (min-width: $services-breakpoint) {
+    .service:hover {
+      .title { padding: 0.1em 3.2em; }
+      p {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 

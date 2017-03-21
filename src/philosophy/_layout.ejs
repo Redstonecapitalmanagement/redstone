@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- partial('../_partials/_head'); %>
+
+<body>
+
+<div class="page subpage">
+
+  <%- partial('../_partials/_header'); %>
+
+  <div class="panel">
+    <div>
+      
+      <main>
+        <aside class="primary-aside">
+          
+          <%- partial('../_partials/_quotes'); %>
+
+        </aside>
+        <div class="primary-content">
+          
+          <%- yield %>
+
+        </div>
+      </main>
+      
+    </div>
+  </div>
+
+  <%- partial('../_partials/_footer'); %>
+
+</div>
+
+<%- partial('../_partials/_scripts'); %>
+
+</body>
+</html>

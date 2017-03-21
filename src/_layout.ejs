@@ -7,24 +7,7 @@
 
 <div class="page">
 
-  <header class="panel primary-header">
-    <div>
-      <div class="columns split">
-        <div>
-          <img src="/images/logo.svg" alt="RedStone Logo" class="logo">
-        </div>
-        <div>
-          <div class="phone">1-800-555-5555</div>
-          <nav class="primary-nav">
-            <a href="/">Home</a>
-            <a href="/">Services</a>
-            <a href="/">Philosophy</a>
-            <a href="/">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+  <%- partial('./_partials/_header'); %>
 
   <div class="hero">
     <div class="slide-1 panel">
@@ -39,14 +22,18 @@
     <div class="slide-2 panel">
       <div>
 
-        <div class="slide-content"></div>
+        <div class="slide-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugit accusamus nulla voluptas non deserunt cumque, asperiores iusto ea illo.
+        </div>
 
       </div>
     </div>
     <div class="slide-3 panel">
       <div>
 
-        <div class="slide-content"></div>
+        <div class="slide-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugit accusamus nulla voluptas non deserunt cumque, asperiores iusto ea illo.
+        </div>
         
       </div>
     </div>
@@ -77,32 +64,7 @@
       <main>
         <aside class="primary-aside">
           
-          <div class="quotes">
-            <div>
-              <div class="quote">
-                <q>Quality means doing it right when no one is looking.</q>
-                <div class="by">Henry Ford</div>
-              </div>
-            </div>
-            <div>
-              <div class="quote">
-                <q>The four most dangerous words in investing are: 'this time it's different.</q>
-                <div class="by">Sir John Templeton</div>
-              </div>
-            </div>
-            <div>
-              <div class="quote">
-                <q>Investing should be like watching paint dry or watching grass grow. If you want excitement ... go to Las Vegas.</q>
-                <div class="by">Paul Samuelson</div>
-              </div>
-            </div>
-            <div>
-              <div class="quote">
-                <q>You make most of your money in a bear market; you just don’t realize it at the time.</q>
-                <div class="by">Shelby Cullom Davis</div>
-              </div>
-            </div>
-          </div>
+          <%- partial('./_partials/_quotes'); %>
 
         </aside>
         <div class="primary-content">
@@ -115,15 +77,11 @@
     </div>
   </div>
 
-  <div class="panel footer">
-    <div></div>
-  </div>
+  <%- partial('./_partials/_footer'); %>
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-<script src="/javascript/main.js"></script>
+<%- partial('./_partials/_scripts'); %>
 
 </body>
 </html>

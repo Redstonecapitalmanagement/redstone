@@ -3,10 +3,6 @@ main {
   margin: $gutter 0;
 }
 
-.primary-content {
-  flex: 1
-}
-
 .primary-aside {
   display: none;
   width: 300px;
@@ -17,4 +13,9 @@ main {
   @media (min-width: $desktop-breakpoint) {
     display: block;
   }
+}
+
+.primary-content {
+  flex: 1;
+  min-height: 300px;
 }
