@@ -1,5 +1,3 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt totam temporibus similique vero quos quia eos laboriosam. Hic sed expedita magnam asperiores dignissimos voluptatum, laudantium! Quidem commodi deserunt, minima amet.
+Our Mission is to build life-long client relationships from a foundation of personal service, trust and an emphasis on absolute returns on investments. To achieve this result, we provide a comprehensive plan, research, ongoing guidance and direction, and proactive investment management. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt totam temporibus similique vero quos quia eos laboriosam. Hic sed expedita magnam asperiores dignissimos voluptatum, laudantium! Quidem commodi deserunt, minima amet.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt totam temporibus similique vero quos quia eos laboriosam. Hic sed expedita magnam asperiores dignissimos voluptatum, laudantium! Quidem commodi deserunt, minima amet.
+We are different from other financial planning and advisory groups because we are selective about the clients we work with and offer an unparalleled level of personal service that is inclusive and family-oriented. Our focus never wavers from what is important - you - our client - and how our successful working relationship can affect your lifestyle and legacy. We believe that you worked hard for your money and that your money should work hard for you.
