@@ -29,7 +29,12 @@
 
     $(window).on('click', function() {
       $('.toggle-primary-nav').removeClass('active');
-    })
+    });
+
+    $.get('data.json')
+      .then(function(data) {
+        console.log(data.comentary[0])
+      })
 
   });
 })(jQuery)
