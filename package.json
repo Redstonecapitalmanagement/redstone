@@ -3,20 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "deploy": "gulp build && gulp deploy"
+    "start": "harp server src"
   },
   "keywords": [],
   "author": "Brad Westfall",
   "license": "ISC",
   "devDependencies": {
-    "clean": "^4.0.2",
-    "cp": "^0.2.0",
-    "del": "^2.2.0",
-    "deploy": "^1.0.3",
-    "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-rimraf": "^0.2.0",
-    "harp": "^0.20.1"
+    "harp": "^0.32.0"
   }
 }
