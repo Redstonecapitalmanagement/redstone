@@ -6,6 +6,10 @@
 .footer-container {
   display: flex;
   margin: $gutter 0;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 .footer-contact {

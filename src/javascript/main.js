@@ -1,40 +1,33 @@
-;(function($, undefined) {
-  $(document).ready(function() {
+(function ($, undefined) {
+  $(document).ready(function () {
+    var quotes = $(".quotes .quote").length;
 
-    var quotes = $('.quotes .quote').length
-
-    $('.hero').slick({
+    $(".hero").slick({
       dots: true,
-      arrows: false
+      arrows: false,
     });
 
-    $('.quotes').slick({
+    $(".quotes").slick({
       infinite: true,
       autoplay: true,
       autoplaySpeed: 10000,
       fade: true,
       speed: 2000,
       arrows: false,
-      initialSlide: Math.floor(Math.random() * quotes)
+      initialSlide: Math.floor(Math.random() * quotes),
     });
 
-    $('.panel.services .service').on('click', function() {
-      $('.hero').slick('slickGoTo', $(this).index());
+    $(".panel.services .service").on("click", function () {
+      $(".hero").slick("slickGoTo", $(this).index());
     });
 
-    $('.toggle-primary-nav').on('click', function(e) {
+    $(".toggle-primary-nav").on("click", function (e) {
       e.stopPropagation();
-      $(this).toggleClass('active');
+      $(this).toggleClass("active");
     });
 
-    $(window).on('click', function() {
-      $('.toggle-primary-nav').removeClass('active');
+    $(window).on("click", function () {
+      $(".toggle-primary-nav").removeClass("active");
     });
-
-    $.get('data.json')
-      .then(function(data) {
-        console.log(data.comentary[0])
-      })
-
   });
-})(jQuery)
+})(jQuery);
