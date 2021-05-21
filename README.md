@@ -8,6 +8,7 @@ harp server src
 harp compile src dist
 
 # Deploy
+# git add/commit first the new dist
 git subtree push --prefix dist origin gh-pages
 
 # If getting an error with the previous deploy command
