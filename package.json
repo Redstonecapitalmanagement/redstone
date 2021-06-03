@@ -9,6 +9,6 @@
   "author": "Brad Westfall",
   "license": "ISC",
   "devDependencies": {
-    "harp": "^0.32.0"
+    "harp": "^0.40.2"
   }
 }
