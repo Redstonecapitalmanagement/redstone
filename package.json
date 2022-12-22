@@ -2,6 +2,7 @@
   "name": "RedStoneCapitalManagement",
   "version": "1.0.0",
   "scripts": {
+    "build": "harp compile src dist",
     "start": "harp server src"
   },
   "keywords": [],
