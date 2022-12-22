@@ -1,4 +1,4 @@
-main {
+main:not(.about) {
   display: flex;
   margin: $gutter 0;
 }
@@ -18,4 +18,25 @@ main {
 .primary-content {
   flex: 1;
   min-height: 300px;
+}
+
+// About Page
+
+main.about {
+  margin: $gutter 0;
+
+  > section {
+    display: flex;
+  }
+
+  .primary-content .bio-photo {
+    float: left;
+    margin: 0 $gutter $gutter 0;
+    display: inline;
+    width: 150px;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
 }

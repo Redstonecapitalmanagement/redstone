@@ -1,12 +1,10 @@
 {
   "name": "RedStoneCapitalManagement",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start": "harp server src"
   },
   "keywords": [],
-  "author": "Brad Westfall",
   "license": "ISC",
   "devDependencies": {
     "harp": "^0.32.0"

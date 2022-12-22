@@ -3,37 +3,73 @@
 
 <%- partial('../_partials/_head'); %>
 
-<body>
+  <body>
 
-<div class="page subpage">
+    <div class="page subpage">
 
-  <%- partial('../_partials/_header'); %>
+      <%- partial('../_partials/_header'); %>
 
-  <div class="panel">
-    <div>
-      
-      <main>
-        <aside class="primary-aside">
-          
-          <img src="/images/kevin.jpg" alt="Kevin Canterbury"><br><br>
-          <%- partial('../_partials/_quotes'); %>
+        <div class="panel">
+          <div>
 
-        </aside>
-        <div class="primary-content">
-          
-          <%- yield %>
+            <main class="about owl">
+              <section>
+                <aside class="primary-aside">
+                  <img src="/images/kevin.jpg" class="bio-photo" alt="Kevin Canterbury">
+                </aside>
+                <div class="primary-content">
+                  <img src="/images/kevin.jpg" class="bio-photo" alt="Kevin Canterbury">
+                  <%- partial('./kevin-c.md'); %>
+                </div>
+              </section>
 
+              <hr>
+
+              <section>
+                <aside class="primary-aside">
+                  <img src="/images/curt.png" class="bio-photo" alt="Curt Stauffer">
+                </aside>
+                <div class="primary-content">
+                  <img src="/images/curt.png" class="bio-photo" alt="Curt Stauffer">
+                  <%- partial('./curt-s.md'); %>
+                </div>
+              </section>
+
+              <hr>
+
+              <section>
+                <aside class="primary-aside">
+                  <img src="/images/jacquie.jpg" class="bio-photo" alt="Jacquie LeMarr">
+                </aside>
+                <div class="primary-content">
+                  <img src="/images/jacquie.jpg" class="bio-photo" alt="Jacquie LeMarr">
+                  <%- partial('./jacquie-l.md'); %>
+                </div>
+              </section>
+
+              <hr>
+
+              <section>
+                <aside class="primary-aside">
+                  <img src="/images/stephanie.jpg" class="bio-photo" alt="Stephanie">
+                </aside>
+                <div class="primary-content">
+                  <img src="/images/stephanie.jpg" class="bio-photo" alt="Stephanie">
+                  <%- partial('./stephanie.md'); %>
+                </div>
+              </section>
+
+            </main>
+
+          </div>
         </div>
-      </main>
-      
+
+        <%- partial('../_partials/_footer'); %>
+
     </div>
-  </div>
 
-  <%- partial('../_partials/_footer'); %>
+    <%- partial('../_partials/_scripts'); %>
 
-</div>
+  </body>
 
-<%- partial('../_partials/_scripts'); %>
-
-</body>
 </html>
