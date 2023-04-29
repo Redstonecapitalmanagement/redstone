@@ -8,6 +8,6 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "harp": "^0.32.0"
+    "harp": "^0.46.0"
   }
 }
