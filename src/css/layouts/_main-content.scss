@@ -20,6 +20,20 @@ main:not(.about) {
   min-height: 300px;
 }
 
+.bear-market-guide {
+  img {
+    width: 100%;
+    display: block;
+  }
+  span {
+    display: block;
+    background-color: $red;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+  }
+}
+
 // About Page
 
 main.about {

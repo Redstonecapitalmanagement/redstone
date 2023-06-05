@@ -5,7 +5,7 @@ Make sure to `npm i harp -g`
 harp server src
 
 # Build
-harp compile src dist
+npm run build
 
 # Deploy
 # git add/commit first the new dist

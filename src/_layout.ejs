@@ -3,79 +3,89 @@
 
 <%- partial('./_partials/_head'); %>
 
-<body>
+  <body>
 
-<div class="page">
+    <div class="page">
 
-  <%- partial('./_partials/_header'); %>
+      <%- partial('./_partials/_header'); %>
 
-  <div class="hero">
-    <div class="slide-1 panel">
-      <div>
-        
-        <div class="slide-content">Integrity, respect &amp; diligence</div>
-        
-      </div>
-    </div>
-    <div class="slide-2 panel">
-      <div>
+        <div class="hero">
+          <div class="slide-1 panel">
+            <div>
 
-        <div class="slide-content">A lifetime of hard work</div>
+              <div class="slide-content">Integrity, respect &amp; diligence</div>
 
-      </div>
-    </div>
-    <div class="slide-3 panel">
-      <div>
+            </div>
+          </div>
+          <div class="slide-2 panel">
+            <div>
 
-        <div class="slide-content">Managed Strategies</div>
-        
-      </div>
-    </div>
-  </div>
+              <div class="slide-content">A lifetime of hard work</div>
 
-  <div class="panel services">
-    <div>
-      
-      <section class="service">
-        <h1 class="title">Quality</h1>
-        <p>Integrity, respect &amp; diligence are the core values of Redstone Capital Management. They are the heart of every relationship.</p>
-      </section>
-      <section class="service">
-        <h1 class="title">Wealth</h1>
-        <p>You have worked hard to build your wealth. Redstone understands the trust &amp; responsibility needed to properly care for these assets.</p>
-      </section>
-      <section class="service">
-        <h1 class="title">Management</h1>
-        <p>No cookie cutter funds. Our strategies shift &amp; evolve based on goals, life events and the changing economic environment.</p>
-      </section>
+            </div>
+          </div>
+          <div class="slide-3 panel">
+            <div>
 
-    </div>
-  </div>
+              <div class="slide-content">Managed Strategies</div>
 
-  <div class="panel">
-    <div>
-      
-      <main>
-        <aside class="primary-aside">
-          
-          <%- partial('./_partials/_quotes'); %>
-
-        </aside>
-        <div class="primary-content">
-          
-          <%- yield %>
-
+            </div>
+          </div>
         </div>
-      </main>
-      
+
+        <div class="panel services">
+          <div>
+
+            <section class="service">
+              <h1 class="title">Quality</h1>
+              <p>Integrity, respect &amp; diligence are the core values of Redstone Capital Management. They are the
+                heart of every relationship.</p>
+            </section>
+            <section class="service">
+              <h1 class="title">Wealth</h1>
+              <p>You have worked hard to build your wealth. Redstone understands the trust &amp; responsibility needed
+                to properly care for these assets.</p>
+            </section>
+            <section class="service">
+              <h1 class="title">Management</h1>
+              <p>No cookie cutter funds. Our strategies shift &amp; evolve based on goals, life events and the changing
+                economic environment.</p>
+            </section>
+
+          </div>
+        </div>
+
+        <div class="panel">
+          <div>
+
+            <main>
+              <aside class="primary-aside">
+
+                <%- partial('./_partials/_quotes'); %>
+
+
+              </aside>
+              <div class="primary-content">
+
+                <%- yield %>
+                  <hr>
+                  <a href="/bear-market-guide.pdf" class="bear-market-guide">
+                    <img src="/images/bear-market-guide.png" />
+                    <span>Download our Bear Market Guide (PDF)</span>
+                  </a>
+
+              </div>
+            </main>
+
+          </div>
+        </div>
+
+        <%- partial('./_partials/_footer'); %>
+
     </div>
-  </div>
 
-  <%- partial('./_partials/_footer'); %>
+    <%- partial('./_partials/_scripts'); %>
 
-</div>
+  </body>
 
-<%- partial('./_partials/_scripts'); %>
-
-</body>
 </html>
